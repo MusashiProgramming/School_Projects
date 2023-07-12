@@ -1,0 +1,128 @@
+/* Reset default styles and set global font styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #212a3e;
+  background-color: #f1f6f9;
+}
+
+/* Add a subtle box-shadow to the header and make it fixed to the top */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+#introduction {
+  padding: 50px;
+  background-color: #f8f8f8;
+  text-align: center;
+}
+
+#introduction h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+#introduction p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* Center the navigation links and add padding */
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+/* Remove bullets and margin from list items and make them inline-block */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+/* Add margin to the right of each list item except the last one */
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav li:last-child {
+  margin-right: 0;
+}
+
+/* Add hover effect to the navigation links */
+nav a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav a.active,
+nav a:hover {
+  color: #007bff;
+}
+
+/* Add a container for the cards */
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Styles for the cards */
+.card {
+  width: calc(25% - 20px);
+  max-width: 275px;
+  height: 475px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.3s ease;
+}
+
+/* Styles for the card header */
+.card-header {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Styles for the card content */
+.card-content {
+  font-size: 16px;
+  line-height: 1.5;
+  height: 200px;
+  overflow: hidden;
+  text-align: justify;
+}
+
+/* Styles for hover effect on the cards */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
